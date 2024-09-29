@@ -1,0 +1,26 @@
+{
+	"name": "@zeebats/biome-config",
+	"version": "0.1.0",
+	"description": "Biome sharable config for Zeebats projects",
+	"keywords": [
+		"biome",
+		"biome-config"
+	],
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/zeebats/biome-config.git"
+	},
+	"license": "MIT",
+	"author": "Zeebats",
+	"type": "module",
+	"exports": {
+		".": "./biome.json"
+	},
+	"peerDependencies": {
+		"@biomejs/biome": "^1.9.2"
+	},
+	"packageManager": "npm@10.8.3",
+	"publishConfig": {
+		"registry": "https://npm.pkg.github.com"
+	}
+}
