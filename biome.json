@@ -1,11 +1,11 @@
 {
-	"$schema": "https://biomejs.dev/schemas/1.9.2/schema.json",
+	"$schema": "https://biomejs.dev/schemas/1.9.4/schema.json",
 	"css": {
 		"formatter": { "enabled": true },
 		"linter": { "enabled": true }
 	},
 	"files": {
-		"include": ["**/*.astro", "**/*.css", "**/*.js", "**/*.json", "**/*.mts", "**/*.ts"]
+		"include": ["**/*.astro", "**/*.css", "**/*.js", "**/*.json", "**/*.mts", "**/*.ts", "**/*.vue"]
 	},
 	"formatter": {
 		"formatWithErrors": true,
@@ -130,7 +130,7 @@
 				"noVoidElementsWithChildren": "error",
 				"noVoidTypeReturn": "error",
 				"useArrayLiterals": "error",
-				"useExhaustiveDependencies": "error",
+				"useExhaustiveDependencies": "off",
 				"useHookAtTopLevel": "error",
 				"useImportExtensions": "error",
 				"useIsNan": "error",
@@ -140,21 +140,31 @@
 			},
 			"nursery": {
 				"noCommonJs": "error",
+				"noDescendingSpecificity": "error",
+				"noDocumentCookie": "error",
+				"noDocumentImportInPage": "off",
 				"noDuplicateCustomProperties": "error",
 				"noDuplicateElseIf": "error",
 				"noDuplicatedFields": "error",
 				"noDynamicNamespaceImportAccess": "error",
 				"noEnum": "error",
 				"noExportedImports": "error",
+				"noHeadElement": "off",
+				"noHeadImportInDocument": "off",
+				"noImgElement": "off",
 				"noIrregularWhitespace": "error",
 				"noMissingVarFunction": "error",
+				"noNestedTernary": "error",
+				"noOctalEscape": "error",
 				"noProcessEnv": "warn",
 				"noSecrets": "error",
 				"noStaticElementInteractions": "error",
 				"noSubstr": "error",
+				"noTemplateCurlyInString": "error",
 				"noUnknownPseudoClass": "error",
 				"noUnknownPseudoElement": "error",
 				"noUselessEscapeInRegex": "error",
+				"noUselessStringRaw": "error",
 				"noValueAtRule": "error",
 				"useAdjacentOverloadSignatures": "error",
 				"useAriaPropsSupportedByRole": "error",
@@ -167,6 +177,8 @@
 					}
 				},
 				"useDeprecatedReason": "error",
+				"useGuardForIn": "error",
+				"useGoogleFontDisplay": "error",
 				"useStrictMode": "error",
 				"useTrimStartEnd": "error",
 				"useValidAutocomplete": "error"
@@ -219,7 +231,7 @@
 				"useFragmentSyntax": "error",
 				"useImportType": "error",
 				"useLiteralEnumMembers": "error",
-				"useNamingConvention": { "level": "error" },
+				"useNamingConvention": { "level": "error", "options": { "requireAscii": true } },
 				"useNodeAssertStrict": "error",
 				"useNodejsImportProtocol": "error",
 				"useNumberNamespace": "error",

@@ -1,6 +1,6 @@
 {
 	"name": "@zeebats/biome-config",
-	"version": "0.1.0",
+	"version": "1.9.4",
 	"description": "Biome sharable config for Zeebats projects",
 	"keywords": [
 		"biome",
@@ -17,9 +17,9 @@
 		".": "./biome.json"
 	},
 	"peerDependencies": {
-		"@biomejs/biome": "^1.9.2"
+		"@biomejs/biome": "1.9.4"
 	},
-	"packageManager": "npm@10.8.3",
+	"packageManager": "npm@11.1.0",
 	"publishConfig": {
 		"registry": "https://npm.pkg.github.com"
 	}
